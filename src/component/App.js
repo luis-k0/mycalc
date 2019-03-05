@@ -19,10 +19,9 @@ const app = props => {
 
   const handleClick = buttonName => {
     // this.setState(calculate(this.state, buttonName));
-    // console.log("memo", memo);
-    // const nextMemo = { ...memo, ...calculate(memo, buttonName) };
-    // console.log("nextMemo", nextMemo);
+    // console.log("memo before", memo);
     setMemo({ ...memo, ...calculate(memo, buttonName) });
+    // console.log("memo after", memo);
   };
 
   // render() {
