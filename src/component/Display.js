@@ -13,7 +13,7 @@ import "./Display.css";
 //   }
 // }
 const display = props => {
-  console.log("display", props.value);
+  // console.log("display", props.value);
   return (
     <div className="component-display">
       <div>{props.value}</div>
@@ -21,6 +21,6 @@ const display = props => {
   );
 };
 display.propTypes = {
-  value: PropTypes.string,
+  value: PropTypes.string
 };
 export default display;
